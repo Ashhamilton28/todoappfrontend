@@ -1,0 +1,254 @@
+/*! CSS Custom Properties */
+:root {
+  --white: #FFFFFF;
+  --tan-1: #FBF9F6;
+  --tan-2: #E7E2DD;
+  --tan-3: #E2D9D1;
+  --tan-4: #D3C1AE;
+  --orange: #F67F00;
+  --text-light: #968c84;
+  --text-dark: #615954;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--tan-4);
+  padding: 2vmin;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  height: 100%;
+}
+
+.align-ctr {
+  text-align: center;
+}
+
+.align-rt {
+  text-align: right;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+.flex-ctr-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-j-end {
+  justify-content: flex-end;
+}
+
+.scroll-y {
+  overflow-y: scroll;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: pink;
+  border: .1vmin solid rgb(184, 35, 169);
+  border-radius: 1vmin;
+  padding: .6vmin;
+  text-align: center;
+  font-size: 2vmin;
+}
+
+.form-container {
+  padding: 3vmin;
+  background-color: black;
+  border: .1vmin solid white;
+  border-radius: 1vmin;
+}
+
+p.error-message {
+  color: rgb(184, 35, 169);
+  text-align: center;
+}
+
+/* form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.25vmin;
+  color: var(--text-light);
+} */
+
+label {
+  font-size: 2vmin;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 1vmin;
+  font-size: 2vmin;
+  border: .1vmin solid var(--tan-3);
+  border-radius: .5vmin;
+  color: var(--text-dark);
+  background-image: none !important; /* prevent lastpass */
+  outline: none;
+}
+
+input:focus {
+  border-color: rgb(57, 8, 77);
+}
+
+button, a.button {
+  margin: 1vmin;
+  padding: 1vmin;
+  color: rgb(184, 35, 169);
+  background-color: white;
+  font-size: 2vmin;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: .1vmin solid black;
+  border-radius: .5vmin;
+  outline: none;
+  cursor: pointer;
+}
+
+button.btn-sm {
+  font-size: 1.5vmin;
+  padding: .6vmin .8vmin;
+}
+
+button.btn-xs {
+  font-size: 1vmin;
+  padding: .4vmin .5vmin;
+}
+
+button:disabled, form:invalid button[type="submit"] {
+  cursor: not-allowed;
+  background-color: white;
+}
+
+button[type="submit"] {
+  grid-column: span 2;
+  margin: 1vmin 0 0;
+}
+
+
+
+/* TODO LIST */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.theapp{
+  background-image: url(pictures/pinkdigitalart.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+header {
+ /* background-color: grey; */
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control{
+  padding: 10px;
+  border-radius: 5%;
+  font-size: medium;
+  min-width: 350px;
+}
+
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.btn{
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5%;
+  min-width: 100px;
+}
+
+.btn-success{
+  background-color: rgb(184, 35, 169);
+  color: white;
+  
+}
+
+.btn-info{
+  background-color: rgb(57, 8, 77);
+color: white;
+}
+
+.tasklist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  margin-top: 24px;
+}
+
+.tasklist > ul {
+  list-style: none;
+  
+}
+
+.task{
+  padding: 10px;
+  
+  margin-top: 25px;
+  box-shadow: 10px 1px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 1px 5px 0px rgba(0,0,0,0.75);
+ background-color: rgba(0, 0, 0, 0.772);
+ color: white;
+}
+
+.fa-solid{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.fa-pen-to-square{
+  color: white;
+}
+
+.fa-trash{
+  color: white;
+}
+
+form{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
